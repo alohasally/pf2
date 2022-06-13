@@ -1,0 +1,167 @@
+#title{
+  height: 100%;
+  /*! background-color: #f61e83; */
+  /*! background-image:url(../img/title1.png), linear-gradient(-5.4deg, #fbf2f5 49.8%, #937e64 50%); */
+  /*! background-position: center,center; */
+  /*! background-repeat: no-repeat; */
+  /*! background-size:30%,100%; */
+  /*! transition: all 0.7s; */
+  /*! display: flex; */
+  /*! justify-content: center; */
+  /*! text-align: center; */
+  /*! flex-direction: column; */
+}
+#title:hover{
+  background-size:10%,100%;
+}
+#title .wrap{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#title:hover .wrap::before{
+  font-size: 90px;
+  opacity: 1;
+  transform:translateY(-140px) rotate(-5.4deg);
+}
+
+#title ul.slide{
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+}
+#title ul.slide li{
+  height: 100%;
+  background-position: center,center;
+  background-repeat: no-repeat;
+  background-size: 100%,100%;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+}
+#title ul.slide li:nth-child(1){
+  background-color: #f61e83;
+  background-image: url(../img/title.png), linear-gradient(-5.4deg, #d8b7b7 49.8%, #894b4b 50%);
+}
+#title ul.slide li:nth-child(1)::before{
+  content: "Roasting Coffee";
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  transition:all 0.7s;
+  text-shadow:1px 2px 5px #333;
+  display: block;
+  
+}
+#title ul.slide li:nth-child(1):hover{
+  
+}
+#title ul.slide li:nth-child(2){
+background-repeat: no-repeat;
+background-image: url(../img/title.png), linear-gradient(-5.8deg, #ffffde 50%, #fcd02a 50%);
+background-size: 30%,100%;
+background-position-x: 50%, center;
+background-position-y: 100%, center;
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+#title ul.slide li:nth-child(2)::before{
+  content:"디저트 플랜트";
+  display: block;
+  width:300px;
+  height: 100px;
+  
+  margin: 0 auto;
+  font-size: 26px;
+  color: #fff;
+  padding-top: 200px;
+  opacity: 0;
+}
+#title span.control{
+
+  width: 200px;
+  height: 50px;
+  background-color: #5f5b5c;
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 100px);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#title span a{
+
+  width: 50px;
+  height: 30px;
+  display: block;
+  /*! background-color: #fff; */
+}
+
+
+#title span a:nth-child(1)::before{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateX(-1px) translateY(2px) rotate(48deg);
+  transform-origin: 100% 100%;
+}
+
+#title span a:nth-child(1)::after{
+content: ""; 
+width: 25px;
+height: 3px;
+display: block;
+background-color: #fff;
+}
+
+
+#title span a:nth-child(2)::before{
+width: 25px;
+height: 3px;
+display: block;
+background-color: #fff;
+content: "";
+transform: translateY(11px) translateX(24px);
+transform-origin: 100% 100%;
+}
+
+
+#title span a:nth-child(2)::after{
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  background-color: #fff;
+  transform: translateY(-2px)translateX(46px)rotate(-45deg);
+  transform-origin: 100% 100%;
+}
+
+
+#title span a:nth-child(1):hover::before{
+  background-color: #f4b3b3;
+}
+#title span a:nth-child(1):hover::after{
+  background-color: #f4b3b3;
+}
+
+#title span a:nth-child(2):hover::before{
+  background-color: #f4b3b3;
+}
+
+#title span a:nth-child(2):hover::after{
+  background-color: #f4b3b3;
+}
